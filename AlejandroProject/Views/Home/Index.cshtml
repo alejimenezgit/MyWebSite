@@ -2,7 +2,62 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+
+    <div id="wrapper">
+        <div class="water-drop"></div>
+        <div class="button button-floating"></div>
+        <div class="button button-sub" data-color="purple"></div>
+        <div class="button button-sub" data-color="green"></div>
+        <div class="button button-sub" data-color="pink"></div>
+        <div class="button button-sub" data-color="indigo"></div>
+    </div>
+
+    <h1> Welcome to my place.</h1>
+    <div class="box-incial">
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+        <p>Use this page to detail your site's privacy policy.</p>
+        <br />
+    </div>
+
+    <div class="d-flex">
+        <div class="w-25">
+            hola
+        </div>
+        <div class="w-75 bg-danger">
+            hola
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".button-floating").click(function () {
+                var $wrapper = $("#wrapper");
+                if (!$wrapper.hasClass("button-floating-clicked")) {
+                    $wrapper.attr("class", "center");
+                    $wrapper.toggleClass("button-floating-clicked-out");
+                }
+                $wrapper.toggleClass("button-floating-clicked");
+                $(".button-sub").click(function () {
+                    var color = $(this).data("color");
+                    $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
+                    $wrapper.addClass("button-sub-" + color + "-clicked");
+                });
+            });
+        });
+    </script> 
+}
