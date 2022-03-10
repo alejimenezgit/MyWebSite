@@ -54,25 +54,23 @@ html {
   min-height: 100%;
 }
 
-/* ---------------------------- Footer -------------------------*/
+/* -------------------------- Navbar --------------------------*/
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+.navbar {
+    top: 0;
+    border-width: 0 0 1px;
+    border-bottom-width: 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 70px !important;
 }
 
-.footer-created-by-AJimenez {
-    width: 100%;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-.footer a {
-    border-bottom: none;
-}
+    .navbar.scrolled {
+        background-color: #000000db !important;
+        transition: background-color 200ms linear;
+    }
 
 
 /* --------------------------- Inicio ------------------------*/
@@ -80,3 +78,70 @@ html {
 .box-incial {
     width: 100%;
 }
+
+.img-incial {
+    max-height: 900px;
+    display: block;
+    min-height: 600px;
+}
+
+.final-img-incial {
+    background-color: #00308F;
+}
+
+.home-hero-glow {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}
+
+.box-inside-incial {
+    color: white;
+    position: absolute;
+    top: 15rem;
+    width: 50%;
+    left: 10%;
+    padding: 12px;
+}
+
+.size-title {
+    font-size: 72px !important;
+    line-height: 76px !important;
+    letter-spacing: -0.03em !important;
+    font-weight: 800 !important;
+}
+
+
+.mt-55 {
+    margin-top: 55px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+
+.w-5 {
+    width: 5%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.svg-line {
+    background-color: black;
+    margin: auto;
+}
+
+.svg-circle {
+    margin: auto;
+    color: black;
+}
+
+.figura-rara {
+    background-color: steelblue;
+    height: 200px;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+}
+

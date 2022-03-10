@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\waterDrop.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\img\footer\email.png" />
     <None Include="wwwroot\img\footer\github.png" />
     <None Include="wwwroot\img\footer\linkedin.png" />

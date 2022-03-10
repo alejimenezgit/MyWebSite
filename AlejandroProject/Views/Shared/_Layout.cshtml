@@ -6,66 +6,81 @@
         <title>@ViewData["Title"] - AlejandroProject</title>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
-        <link rel="stylesheet" href="~/css/waterDrop.css" />
+        <link rel="stylesheet" href="~/css/footer.css" />
     </head>
-    <body>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AlejandroProject</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#"> Alejandro JR </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link" href="#">  </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                <a class="nav-link" href="#section1"> Sobre mi..</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Experiencia</a>
+                                <a class="nav-link" href="#section2"> Mis estudios </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Estudios</a>
+                                <a class="nav-link" href="#section3"> Mis experiencias </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">GitHub</a>
+                                <a class="nav-link" href="#section4"> Mis proyectos </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Proyectos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    Section 4
+                                </a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#section41">Link 1</a>
+                                <a class="dropdown-item" href="#section42">Link 2</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
         </header>
 
-        <div class="container">
+        <div class="mb-90">
             <main role="main">
                 @RenderBody()
             </main>
         </div>
 
-        @*<footer class="border-top footer text-muted">
-            <div class="footer-created-by-AJimenez">
-                <strong> Created by Alejandro Jiménez  </strong>
-                <a href="https://es.linkedin.com/in/alejandro-jimenez-regalon" target="_blank">
-                    <img src="~/img/footer/linkedin.png" class="mx-2" width="25" alt="Linkedin de Alejandro Jiménez" />
-                </a>
-                <a href="https://github.com/alejimenezgit/" target="_blank">
-                    <img src="~/img/footer/github.png" class="mx-2" width="25" alt="Github de Alejandro Jiménez" />
-                </a>
-                <a href="mailto:alejimreg@gmail.com" target="_blank">
-                    <img src="~/img/footer/email.png" class="mx-1" width="25" alt="Email de Alejandro Jiménez" />
-                </a>
-                <a href="" target="_blank">
-                    <img src="~/img/footer/web.png" class="mx-2" width="25" alt="Web de Alejandro Jiménez" />
-                </a>
+        <footer class="border-top footer text-muted">
+            <div class="row w-100">
+                <div class="col none"></div>
+                <div class="col responsive-col-footer">
+                    <strong class="float-right"> Created by Alejandro Jiménez  </strong>
+                </div>
+                <div class="col d-flex">
+                    <div class="responsive-col-footer">
+                        <a href="https://es.linkedin.com/in/alejandro-jimenez-regalon" target="_blank">
+                        <img src="~/img/footer/linkedin.png" class="mx-2" width="25" alt="Linkedin de Alejandro Jiménez" />
+                        </a>
+                        <a href="https://github.com/alejimenezgit/" target="_blank">
+                            <img src="~/img/footer/github.png" class="mx-2" width="25" alt="Github de Alejandro Jiménez" />
+                        </a>
+                        <a href="mailto:alejimreg@gmail.com" target="_blank">
+                            <img src="~/img/footer/email.png" class="mx-1" width="25" alt="Email de Alejandro Jiménez" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="~/img/footer/web.png" class="mx-2" width="25" alt="Web de Alejandro Jiménez" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col none"></div>
             </div>
-        </footer>*@
+        </footer>
 
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
