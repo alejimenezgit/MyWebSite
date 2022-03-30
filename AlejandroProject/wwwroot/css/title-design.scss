@@ -1,0 +1,16 @@
+﻿
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.body-design {
+    font-family: "Inter", sans-serif;
+    background-color: mix(#fff, #01ACFF, 82%);
+}
+
+h1 {
+    color: mix(#fff, #01ACFF, 85%);
+    font-size: calc(1em + 8vw);
+    font-weight: 900;
+    text-shadow: -0.0075em 0.0075em 0 mix(#fff, #01ACFF, 94%), 0.005em 0.005em 0 mix(#fff, #01ACFF, 60%), 0.01em 0.01em 0 mix(#fff, #01ACFF, 62%), 0.015em 0.015em mix(#fff, #01ACFF, 64%), 0.02em 0.02em 0 mix(#fff, #01ACFF, 66%), 0.025em 0.025em 0 mix(#fff, #01ACFF, 68%), 0.03em 0.03em 0 mix(#fff, #01ACFF, 70%), 0.035em 0.035em 0 mix(#fff, #01ACFF, 72%);
+}

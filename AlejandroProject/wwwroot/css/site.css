@@ -101,7 +101,9 @@ html {
     top: 15rem;
     width: 50%;
     left: 10%;
-    padding: 12px;
+    padding: 24px;
+    box-shadow: 5px 5px 15px 5px #01ACFF;
+    border-radius: 12px;
 }
 
 .size-title {
@@ -144,4 +146,5 @@ html {
     height: 200px;
     clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
 }
+
 
